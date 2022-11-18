@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+.bio-container {
+  width: 70%;
+  margin: 0 0 96px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.profile-picture {
+  height: 384px;
+  border-radius: 50%;
+  transition: 0.15s;
+}
+
+.name, .description {
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  transition: 0.15s;
+}
+
+.name {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.skills {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 48px;
+  color: white;
+  margin-top: 256px;
+}
+
+.skills-grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+  margin-bottom: 192px;
+  height: 350px;
+}
+
+.skill-logo {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.skill-label-and-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%; 
+}
+
+.skill-label {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-top: 25px;
+}
+
+.skill-gauge {
+  margin-top: 10px;
+  width: 75%;
+  height: 18px;
+  border-radius: 9px;
+  background-color: #202020;
+}
+
+.skill-gauge-bar {
+  height: 100%;
+  background-color: white;
+  border-radius: 9px;
+}
+
+#html-skill-level {
+  width: 80%;
+}
+
+#css-skill-level {
+  width: 70%;
+}
+
+#bootstrap-skill-level {
+  width: 50%;
+}
+
+#jquery-skill-level {
+  width: 15%;
+}
+
+#photoshop-skill-level {
+  width: 75%;
+}
+
+@media (max-width: 800px) {
+  .profile-picture {
+    height: 256px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .skills {
+    padding-top: 128px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
